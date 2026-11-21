@@ -23,14 +23,14 @@ const configConfetti = {
 const weddingInfo = [
   {
     time: {
-      date: "29/11",
+      date: "27/11",
       year: "2026",
-      time: "10:00",
-      full: "Chủ nhật, Ngày 29 Tháng 11 năm 2026",
+      time: "16:00",
+      full: "Thứ Sáu, Ngày 27 Tháng 11 năm 2026",
     },
-    address: "Tổ 2A, ấp bình long, xã châu thành, tỉnh tây ninh",
-    street: "Tổ 2A, ấp bình long, xã châu thành, tỉnh tây ninh",
-    phone: "0372 639 558",
+    address: "Chợ mỏ công, xã trà vong, tỉnh tây ninh",
+    street: "Chợ mỏ công, xã trà vong, tỉnh tây ninh",
+    phone: "0966 553 252",
     posision: "bottom left",
   },
 ];
@@ -107,7 +107,7 @@ const invitationSection = {
     "/img/SEO_%20(64).jpg",
   ],
   monthTitle: "Tháng 11",
-  activeDay: 29,
+  activeDay: 27,
 };
 
 // album section
@@ -152,9 +152,9 @@ const giftSection = {
 const timerSection = {
   weddingTime: {
     year: 2026,
-    day: 29,
+    day: 27,
     month: 11,
-    hour: 10,
+    hour: 16,
     minute: 0,
   },
 };
