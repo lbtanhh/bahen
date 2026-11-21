@@ -95,7 +95,7 @@ function GuestBook({ fName }) {
     <div className={cx("wrapper")}>
       <div className={cx("header")} ref={viewRef}>
         <div className={cx("background")}>
-          <h2 className={cx("title")}>Sổ lưu bút</h2>
+          <h2 className={cx("title")}>Mừng cưới</h2>
         </div>
         <div className={cx("img-wrap")}>
           <div
@@ -112,95 +112,7 @@ function GuestBook({ fName }) {
           <div className={cx("frame")} />
         </div>
       </div>
-      <div className={cx("container")}>
-        <input
-          type="text"
-          className={cx("iname")}
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          placeholder="Tên hoặc nickname của bạn"
-        />
 
-        <textarea
-          className={cx("iwish")}
-          placeholder="Viết lời chúc ở đây ..."
-          value={wish}
-          onChange={(e) => setWish(e.target.value)}
-        />
-        <div className={cx("radio-box")}>
-          <input
-            className={cx("radio")}
-            type="radio"
-            id="yes"
-            name="will_arrive"
-            onChange={(e) => handleChangeRadio("yes")}
-            value="Sẽ đến dự tiệc"
-          />
-          <label htmlFor="yes">Sẽ đến dự tiệc</label>
-          <input
-            className={cx("radio")}
-            type="radio"
-            id="no"
-            name="will_arrive"
-            value="Không thể đến dự"
-            onChange={(e) => handleChangeRadio("no")}
-          />
-          <label htmlFor="no">Không thể đến dự</label>
-          <input
-            className={cx("radio")}
-            type="radio"
-            name="will_arrive"
-            id="or"
-            value="Không biết"
-            onChange={(e) => handleChangeRadio("or")}
-          />
-          <label htmlFor="or">Không biết</label>
-        </div>
-        <p className={cx("help-text")}>
-          Nếu không thể gửi lời nhắn bằng trình duyệt trong{" "}
-          <strong>Messeger</strong> , hãy thử mở trình duyệt bên ngoài (
-          <strong>Chome, Safia,...</strong>){" "}
-        </p>
-
-        <button
-          ref={ref}
-          className={cx("btn")}
-          style={{
-            transform: isInView ? "translateY(0)" : "translateY(80px)",
-            opacity: isInView ? 1 : 0,
-            transition: "all 1s cubic-bezier(0.17, 0.55, 0.55, 1) ",
-          }}
-          onClick={handleSendMessage}
-        >
-          {renderIcon(willArrive)}
-          Gửi lời nhắn
-          {renderIcon(willArrive)}
-        </button>
-        {/* <button
-          className={cx("btn")}
-          style={{
-            transform: isInView ? "translateY(0)" : "translateY(80px)",
-            opacity: isInView ? 1 : 0,
-            transition: "all 1s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
-          }}
-          onClick={() => setIsOpenGift(true)}
-        >
-          Mừng cưới
-        </button> */}
-        <button
-          className={cx("btn")}
-          style={{
-            transform: isInView ? "translateY(0)" : "translateY(80px)",
-            opacity: isInView ? 1 : 0,
-            transition: "all 1s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
-          }}
-          onClick={() => {
-            router.push(`/wish?name=${fName}`);
-          }}
-        >
-          Xem lời chúc
-        </button>
-      </div>
       <Confetti active={active} config={configConfetti} />
 
       {/* {isOpenGift && (

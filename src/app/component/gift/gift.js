@@ -39,11 +39,7 @@ function Gift({ onClose, hasNav = true }) {
         <IoClose className={cx("icon")} />
       </span> */}
 
-      <div className={cx("header")}>
-        <p className={cx("text")}>Mừng cưới</p>
-      </div>
-
-      <div className={cx("content")}>
+      <div className={cx("")}>
         <img className={cx("img")} src={giftSection.image} />
 
         {hasNav && (

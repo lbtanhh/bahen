@@ -48,6 +48,7 @@ export default function Home() {
       <Invitation />
       <Album name={name}></Album>
       <Timer />
+      <GuestBook />
       <Final />
       <Footer />
     </div>
